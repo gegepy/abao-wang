@@ -1,154 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>测试首页</title>
-  <link rel="stylesheet" type="text/css" href="resource/iconfont.css">
-  <style type="text/css">
-	body {
-		font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;color:#333;background-color:#fff;min-width:1226px;width: 100%;height: 100%;margin: 0
-	}
-	div{cursor: default;}
-	.daohanglan{
-		position:relative;z-index:30;height:40px;font-size:12px;color:#b0b0b0;background:#333;line-height: 40px
-	}
-	.dhlleft{float:left;height:40px;line-height:40px;overflow:hidden;
-	}
-	.dhlright{float:right;height:40px;line-height:40px;overflow:hidden;
-	}
-	.dhl{
-		width:1226px;*zoom:1;margin-right:auto;margin-left:auto
-	}
-	a{
-		margin: 0
-	}
-	.aaa{
-		margin: 0
-	}
-	.aaa:hover{color: rgba(251,251,251,251);}
-	.gouWuChe{
-		position:relative;z-index:32;display:block;height:40px;line-height:40px;text-align:center;color:#b0b0b0;background:#424242;width: 120px;margin-left: 15px;
-	}
-	.gouWuChe:hover{
-		background-color: rgba(251,251,251,251);color: rgba(251,135,135,135);
-	}
-	.aab{
-		position:relative;z-index:20;height:100px;width:1226px;*zoom:1;margin-right:auto;margin-left:auto;
-	}
-	.aac{float:left;line-height:100px;overflow:hidden;
-	}
-	.aad{
-		margin-left: 10px;font-size: 16px;
-	}
-	.aad:hover{
-		color: #FF4500;
-	}
-	        	 	input::-webkit-input-placeholder { 
-	        	 		text-align: center;
-	        	 		width: 100px;
-	        	 		
-						color:#E0E0E0; 
-						-webkit-transition: color.5s; 
-						} 
-						input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder { 
-						color: #fff;
-						-webkit-transition: color.5s; 
-						} 
-	.aae{
-		width: 234px;height:42px;line-height: 42px;
-	}
-	.aae:hover{
-		background-color:#FF4500;
-	}
-	.aaf{
-		float: left;text-align: center;font-size: 12px; color:rgba(255,255,255,0.7);background-color:#5f5750;width: 234px;
-	}
-	.aag{
-		position:relative;float:left;width:70px;height:62px;padding:0 3px;margin-top: 20px;
-	}
-	.aag:hover{
-		color: rgb(255,255,255);
-	}
-	.aah{
-		width: 234px;height: 340px; border-top-style: solid;border-top-width: 1px;background-color:#fafafa;position: relative;text-align: center;
-	}
-	.aai{
-		background-color:#e53935;position:absolute;top:0;left:50%;z-index:2;width:64px;height:20px;margin-left:-32px;font-size:12px;line-height:20px;text-align:center;color:#fff;
-	}
-	.aaj{
-		float: left;background-color: rgb(255,255,255);height: 300px;width: 234px;
-	}
-	.aaj:hover{
-        box-shadow: 1px 1px 5px #333;
-        transition:  2s ease;
-	}
-	.aak{
-		position:absolute;top:0;left:50%;z-index:2;width:64px;height:20px;margin-left:-32px;font-size:12px;line-height:20px;text-align:center;color:#fff;background-color:#e53935;
-	}
-	.aal{
-		position:relative;float:left;width:245px;height:115px;text-align: center;line-height: 115px;
-	}
-	.aal:hover{
-		color: #FF4500;
-	}
-	.you{color: rgb(210,210,210);cursor:pointer;}
-	.you:hover{
-		color:#FF4500;
-	}
-	#qq:hover{
-		color:#FF4500;
-	}
-	#search:hover{
-		background-color: #FF8000;
-		color: #fff;
-	}			
-	#sou:visited{
-		border-color: rgba(251,135,135,135);
-        
-	}
+    <meta charset="UTF-8">
+    <title>充电器说明书</title>
+    <link rel="stylesheet" type="text/css" href="resource/iconfont.css">
+    <style type="text/css">
+        body {
+            font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+            color: #333;
+            background-color: #fff;
+            min-width: 1226px;
+            width: 100%;
+            height: 100%;
+            margin: 0
+        }
 
-	input{
-		border:#E0E0E0 1px solid;
-	}
-input:focus {
-    border: 1px solid yellow;
-    box-shadow:0;
-}
-	  #lunbo{
-	  	position:relative;height:460px;}
-	  }
-	  
-</style>
-<script type="text/javascript">
-        
-		        function over(){var add = document.getElementById("gwcplus");add.style.display="block";};
-		        function out(){var add = document.getElementById("gwcplus");add.style.display = "none";};
-		        function t1over(){ var add = document.getElementById("tan11");add.style.display="block";};
-		        function t1out(){  var add = document.getElementById("tan11"); add.style.display = "none"; };
-		        function t2over(){ var add = document.getElementById("tan12");add.style.display="block"; };
-		        function t2out(){  var add = document.getElementById("tan12");add.style.display = "none";};
-		        function t3over(){ var add = document.getElementById("tan13");add.style.display="block"; };
-		        function t3out(){  var add = document.getElementById("tan13");add.style.display = "none";};
-		        function t4over(){ var add = document.getElementById("tan14");add.style.display="block"; };
-		        function t4out(){  var add = document.getElementById("tan14");add.style.display = "none";};
-		        function t5over(){ var add = document.getElementById("tan15");add.style.display="block"; };
-		        function t5out(){  var add = document.getElementById("tan15");add.style.display = "none";};
-		        function t6over(){ var add = document.getElementById("tan16");add.style.display="block"; };
-		        function t6out(){  var add = document.getElementById("tan16");add.style.display = "none";};
-		        function t7over(){ var add = document.getElementById("tan17");add.style.display="block"; };
-		        function t7out(){  var add = document.getElementById("tan17");add.style.display = "none";};
-		        function t8over(){ var add = document.getElementById("tan18");add.style.display="block"; };
-		        function t8out(){  var add = document.getElementById("tan18");add.style.display = "none";};
-		        function t9over(){ var add = document.getElementById("tan19");add.style.display="block"; };
-		        function t9out(){  var add = document.getElementById("tan19");add.style.display = "none";};
-		        function t10over(){var add = document.getElementById("tan20");add.style.display="block"; };
-		        function t10out(){ var add = document.getElementById("tan20");add.style.display = "none";};
+        div {
+            cursor: default;
+        }
 
-		        
-	   
-</script>
+        .daohanglan {
+            position: relative;
+            z-index: 30;
+            height: 40px;
+            font-size: 12px;
+            color: #b0b0b0;
+            background: #333;
+            line-height: 40px
+        }
+
+        .dhlleft {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+        }
+
+        .dhlright {
+            float: right;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+        }
+
+        .dhl {
+            width: 1226px;
+            *zoom: 1;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        a {
+            margin: 0
+        }
+
+        .aaa {
+            margin: 0
+        }
+
+        .aaa:hover {
+            color: rgba(251, 251, 251, 251);
+        }
+
+        .gouWuChe {
+            position: relative;
+            z-index: 32;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #b0b0b0;
+            background: #424242;
+            width: 120px;
+            margin-left: 15px;
+        }
+
+        .gouWuChe:hover {
+            background-color: rgba(251, 251, 251, 251);
+            color: rgba(251, 135, 135, 135);
+        }
+
+        .aab {
+            position: relative;
+            z-index: 20;
+            height: 100px;
+            width: 1226px;
+            *zoom: 1;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .aac {
+            float: left;
+            line-height: 100px;
+            overflow: hidden;
+        }
+
+        .aad {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .aad:hover {
+            color: #FF4500;
+        }
+
+        input::-webkit-input-placeholder {
+            text-align: center;
+            width: 100px;
+
+            color: #E0E0E0;
+            -webkit-transition: color .5s;
+        }
+
+        input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder {
+            color: #fff;
+            -webkit-transition: color .5s;
+        }
+
+        .aae {
+            width: 234px;
+            height: 42px;
+            line-height: 42px;
+        }
+
+        .aae:hover {
+            background-color: #FF4500;
+        }
+
+        .aaf {
+            float: left;
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            background-color: #5f5750;
+            width: 234px;
+        }
+
+        .aag {
+            position: relative;
+            float: left;
+            width: 70px;
+            height: 62px;
+            padding: 0 3px;
+            margin-top: 20px;
+        }
+
+        .aag:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .aah {
+            width: 234px;
+            height: 340px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            background-color: #fafafa;
+            position: relative;
+            text-align: center;
+        }
+
+        .aai {
+            background-color: #e53935;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 2;
+            width: 64px;
+            height: 20px;
+            margin-left: -32px;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .aaj {
+            float: left;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            width: 234px;
+        }
+
+        .aaj:hover {
+            box-shadow: 1px 1px 5px #333;
+            transition: 2s ease;
+        }
+
+        .aak {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 2;
+            width: 64px;
+            height: 20px;
+            margin-left: -32px;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: #e53935;
+        }
+
+        .aal {
+            position: relative;
+            float: left;
+            width: 245px;
+            height: 115px;
+            text-align: center;
+            line-height: 115px;
+        }
+
+        .aal:hover {
+            color: #FF4500;
+        }
+
+        .you {
+            color: rgb(210, 210, 210);
+            cursor: pointer;
+        }
+
+        .you:hover {
+            color: #FF4500;
+        }
+
+        #qq:hover {
+            color: #FF4500;
+        }
+
+        #search:hover {
+            background-color: #FF8000;
+            color: #fff;
+        }
+
+        #sou:visited {
+            border-color: rgba(251, 135, 135, 135);
+
+        }
+
+        input {
+            border: #E0E0E0 1px solid;
+        }
+
+        input:focus {
+            border: 1px solid yellow;
+            box-shadow: 0;
+        }
+
+        #lunbo {
+            position: relative;
+            height: 460px;
+        }
+
+        }
+
+    </style>
+    <script type="text/javascript">
+
+      function over() {
+        var add = document.getElementById("gwcplus");
+        add.style.display = "block";
+      };
+
+      function out() {
+        var add = document.getElementById("gwcplus");
+        add.style.display = "none";
+      };
+
+      function t1over() {
+        var add = document.getElementById("tan11");
+        add.style.display = "block";
+      };
+
+      function t1out() {
+        var add = document.getElementById("tan11");
+        add.style.display = "none";
+      };
+
+      function t2over() {
+        var add = document.getElementById("tan12");
+        add.style.display = "block";
+      };
+
+      function t2out() {
+        var add = document.getElementById("tan12");
+        add.style.display = "none";
+      };
+
+      function t3over() {
+        var add = document.getElementById("tan13");
+        add.style.display = "block";
+      };
+
+      function t3out() {
+        var add = document.getElementById("tan13");
+        add.style.display = "none";
+      };
+
+      function t4over() {
+        var add = document.getElementById("tan14");
+        add.style.display = "block";
+      };
+
+      function t4out() {
+        var add = document.getElementById("tan14");
+        add.style.display = "none";
+      };
+
+      function t5over() {
+        var add = document.getElementById("tan15");
+        add.style.display = "block";
+      };
+
+      function t5out() {
+        var add = document.getElementById("tan15");
+        add.style.display = "none";
+      };
+
+      function t6over() {
+        var add = document.getElementById("tan16");
+        add.style.display = "block";
+      };
+
+      function t6out() {
+        var add = document.getElementById("tan16");
+        add.style.display = "none";
+      };
+
+      function t7over() {
+        var add = document.getElementById("tan17");
+        add.style.display = "block";
+      };
+
+      function t7out() {
+        var add = document.getElementById("tan17");
+        add.style.display = "none";
+      };
+
+      function t8over() {
+        var add = document.getElementById("tan18");
+        add.style.display = "block";
+      };
+
+      function t8out() {
+        var add = document.getElementById("tan18");
+        add.style.display = "none";
+      };
+
+      function t9over() {
+        var add = document.getElementById("tan19");
+        add.style.display = "block";
+      };
+
+      function t9out() {
+        var add = document.getElementById("tan19");
+        add.style.display = "none";
+      };
+
+      function t10over() {
+        var add = document.getElementById("tan20");
+        add.style.display = "block";
+      };
+
+      function t10out() {
+        var add = document.getElementById("tan20");
+        add.style.display = "none";
+      };
+
+
+    </script>
 </head>
-<div style="position: fixed;top:300px;right: 0px;text-align: center;">
+<!--<div style="position: fixed;top:300px;right: 0px;text-align: center;">
     <div class="you" style="height: 80px;width: 80px; border-color: rgba(220,220,220,0.4);border-style: solid;border-width: 1px;border-right: none;background-color: #fff;">
 		<i class="iconfont" style="font-size: 30px;">&#xe602;</i><br/>个人中心
 	</div>
@@ -161,700 +383,944 @@ input:focus {
 	<div class="you" style="height: 80px;width: 80px; border-color: rgba(220,220,220,0.4);border-style: solid;border-width: 1px;border-right: none;margin-top: 20px;background-color: #fff;">
 		<a class="you"  href="#" ><i class="iconfont" style="font-size: 30px;">&#xe66c;</i><br/>返回顶部</a>
 	</div>
-</div>
+</div>-->
 <body onload="init()">
-	
-  <div style="height: 119px; margin: 0">
-  	<img alt="" width="100%" height="119px" src="images/head.jpg"/>
-  </div>
 
- 
-	  <div class="daohanglan" ">
-	  	<div class="dhl">
-		   <div class="dhlleft">
-		   	<a class="aaa">小米商城</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">MIUI</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">loT</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">云服务</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">金融</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">有品</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">小爱开放平台</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">政企服务</a>
-		   	<span style="margin:0 .1em;color:#424242">丨</span>
-		   	<a class="aaa">Select Region</a>
-		   </div>
-		   <div class="dhlright">
-		   	<div id="gwc" class="gouWuChe" style="float: right;" onmouseover="over()" onmouseout="out()">
-		   		<div style="float: left;margin-left: 15px;">
-		   		 <i style="font-size: 24px" class="iconfont">&#xe628;</i>
-		   		</div>
-		   		<div style="float: left;margin-left: 3px;">
-		   		 <a >购物车 (0)</a>
-		   	    </div>
-	        </div>
-	        
-		   	<div style="float: right;margin-right: 20px;">
-		   	<a class="aaa">登陆</a>
-		   	<span style="margin:0em;color:#424242">丨</span>
-		   	<a class="aaa" >注册</a>
-		   	<span style="margin:0em;color:#424242">丨</span>
-		   	<a class="aaa">消息通知</a>
-		   	</div>
-		   </div>
-	  	</div>
-	  </div>
- <div id="middle" style="width: 1226px;margin: 0 auto;">
-	  <div class="aab">
-	  	<div style="float: left;height: 100%;">
-	  		<img alt="" style="margin-top: 24px;" src="images/mi.png">
-	  	</div>
-	  	<div style="float: left;height: 100%;margin-left: 50px;">
-	  		<img alt="" style="margin-top: 23px;" src="images/816.png">
-	  	</div>
-	  	<div class="aac" style="margin-left: 30px;">
-		   	<a class="aad">小米手机</a>
-		   	<a class="aad">红米</a>
-		   	<a class="aad">电视</a>
-		   	<a class="aad">笔记本</a>
-		   	<a class="aad">空调</a>
-		   	<a class="aad">新品</a>
-		   	<a class="aad">路由器</a>
-		   	<a class="aad">智能硬件</a>
-		   	<a class="aad">服务</a>
-		   	<a class="aad">社区</a>
-		</div>
-		<div id="sou" style="float: right;margin-top: 26px;position: relative;">
-			<input type="text" style="float: left; height:48px;width:250px;" placeholder="小米8"  /> 
-	        <div id="search" style="float: left;height: 50px;width: 50px;border:#E0E0E0 1px solid;border-left: none;color: #E0E0E0; ">
-	        	 <i style="font-size:18px;line-height: 50px;margin-left: 18px" class="iconfont">&#xe63e;</i>
-	        	
-	        </div>
-		</div>
-		<div id="gwcplus" style="position:absolute;z-index:999;width: 310px;height: 100px;line-height: 100px;text-align: center; right: 0px;top: 0px;background-color: rgb(251,251,251);display: none;box-shadow:1px 1px 2px #333">
-	        	购物车中还没有商品，赶紧选购吧！
-	    </div>
-	    
-	  </div>
-	  <div id="lunbo">
-	  	<div id="container">
-        <div id="list" style="left:-1226px">
-            <img src="images/4.jpg" alt="4" />
-            <img src="images/1.jpg" alt="1" />
-            <img src="images/2.jpg" alt="2" />
-            <img src="images/3.jpg" alt="3" />
-            <img src="images/4.jpg" alt="4" />
-            <img src="images/1.jpg" alt="1" />
+<!--<div style="height: 119px; margin: 0">
+    <img alt="" width="100%" height="119px" src="images/head.jpg"/>
+</div>-->
+
+
+<!--<div class="daohanglan" ">
+    <div class="dhl">
+     <div class="dhlleft">
+         <a class="aaa">小米商城</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">MIUI</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">loT</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">云服务</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">金融</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">有品</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">小爱开放平台</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">政企服务</a>
+         <span style="margin:0 .1em;color:#424242">丨</span>
+         <a class="aaa">Select Region</a>
+     </div>
+     <div class="dhlright">
+         <div id="gwc" class="gouWuChe" style="float: right;" onmouseover="over()" onmouseout="out()">
+             <div style="float: left;margin-left: 15px;">
+              <i style="font-size: 24px" class="iconfont">&#xe628;</i>
+             </div>
+             <div style="float: left;margin-left: 3px;">
+              <a >购物车 (0)</a>
+             </div>
+      </div>
+
+         <div style="float: right;margin-right: 20px;">
+         <a class="aaa">登陆</a>
+         <span style="margin:0em;color:#424242">丨</span>
+         <a class="aaa" >注册</a>
+         <span style="margin:0em;color:#424242">丨</span>
+         <a class="aaa">消息通知</a>
+         </div>
+     </div>
+    </div>
+</div>-->
+<div id="middle" style="width: 994px;margin: 0 auto;">
+
+    <div style="height: 119px; margin: 0;text-align: center; padding-top: 31px;">
+        <span style="font-size: 20px; color: #6271b2;">充 电 器 说 明</span>
+    </div>
+    <!--<div class="aab">
+        <div style="float: left;height: 100%;">
+            <img alt="" style="margin-top: 24px;" src="images/mi.png">
         </div>
-        <div id="buttons">
-            <span index="1" class="on"></span>
-            <span index="2"></span>
-            <span index="3"></span>
-            <span index="4"></span>
+        <div style="float: left;height: 100%;margin-left: 50px;">
+            <img alt="" style="margin-top: 23px;" src="images/816.png">
         </div>
-        <div class="arrow" id="pre">
-        <a style="color: #fff;text-decoration: none;" href="javascript:;" ><</a>
+        <div class="aac" style="margin-left: 30px;">
+            <a class="aad">小米手机</a>
+            <a class="aad">红米</a>
+            <a class="aad">电视</a>
+            <a class="aad">笔记本</a>
+            <a class="aad">空调</a>
+            <a class="aad">新品</a>
+            <a class="aad">路由器</a>
+            <a class="aad">智能硬件</a>
+            <a class="aad">服务</a>
+            <a class="aad">社区</a>
         </div>
-        <div class="arrow" id="next">
-        <a style="color: #fff;text-decoration: none;" href="javascript:;"  >></a>
+        <div id="sou" style="float: right;margin-top: 26px;position: relative;">
+            <input type="text" style="float: left; height:48px;width:250px;" placeholder="小米8"/>
+            <div id="search"
+                 style="float: left;height: 50px;width: 50px;border:#E0E0E0 1px solid;border-left: none;color: #E0E0E0; ">
+                <i style="font-size:18px;line-height: 50px;margin-left: 18px" class="iconfont">&#xe63e;</i>
+
+            </div>
+        </div>
+        <div id="gwcplus"
+             style="position:absolute;z-index:999;width: 310px;height: 100px;line-height: 100px;text-align: center; right: 0px;top: 0px;background-color: rgb(251,251,251);display: none;box-shadow:1px 1px 2px #333">
+            购物车中还没有商品，赶紧选购吧！
+        </div>
+
+    </div>
+    <div id="lunbo">
+        <div id="container">
+            <div id="list" style="left:-1226px">
+                <img src="images/4.jpg" alt="4"/>
+                <img src="images/1.jpg" alt="1"/>
+                <img src="images/2.jpg" alt="2"/>
+                <img src="images/3.jpg" alt="3"/>
+                <img src="images/4.jpg" alt="4"/>
+                <img src="images/1.jpg" alt="1"/>
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+                <span index="4"></span>
+            </div>
+            <div class="arrow" id="pre">
+                <a style="color: #fff;text-decoration: none;" href="javascript:;"><</a>
+            </div>
+            <div class="arrow" id="next">
+                <a style="color: #fff;text-decoration: none;" href="javascript:;">></a>
+            </div>
+        </div>
+        <style type="text/css">
+            #container {
+
+                width: 1226px;
+                height: 460px;
+                border: none;
+                position: relative;
+                overflow: hidden;
+            }
+
+            #list {
+                /*6张图片*/
+                width: 7356px;
+                height: 460px;
+                position: absolute;
+                z-index: 1;
+            }
+
+            #list img {
+                float: left;
+                width: 1226px;
+                height: 460px;
+            }
+
+            #buttons {
+                position: absolute;
+                height: 10px;
+                width: 100px;
+                z-index: 10;
+                bottom: 20px;
+                right: 100px;
+            }
+
+            #buttons span {
+                cursor: pointer;
+                float: left;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin-right: 5px;
+                background: #333;
+            }
+
+            #buttons .on {
+                background: orangered;
+            }
+
+            .arrow {
+                display: block;
+                cursor: pointer;
+                line-height: 50px;
+                text-align: center;
+                font-size: 30px;
+
+                width: 40px;
+                height: 50px;
+                position: absolute;
+                z-index: 10;
+                top: 210px;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.3);
+
+            }
+
+            .arrow:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            #pre {
+                left: 234px;
+            }
+
+            #next {
+                right: 0px;
+            }
+        </style>
+        <script type="text/javascript">
+          function g(id) {
+
+            return document.getElementById(id);
+          }
+
+          window.onload = function () {
+            var next = g("next");
+            var list = g("list");
+            var pre = g("pre");
+            var buttons = g("buttons").getElementsByTagName("span");
+            var len = 4;
+            var index = 1;
+            var interval = 3000;
+            var animated = false;
+            var timer; //全局变量
+            /*按钮显示*/
+            function showButton() {
+              for (var i = 0; i < buttons.length; i++) {
+                if (buttons[i].className == "on") {
+                  buttons[i].className = "";
+                  break;
+                }
+              }
+              buttons[index - 1].className = "on";
+            }
+
+            /*图片切换动画*/
+            function animate(offset) {
+              if (offset == 0) {
+                return;
+              }
+              animated = true;
+              var newLeft = parseInt(list.style.left) + offset;
+              var time = 300; //位移总时间
+              var interval = 10; //位移间隔时间
+              var speed = offset / (time / interval); //每次位移量
+              function go() {
+                if ((speed < 0 && parseInt(list.style.left) > newLeft) || (speed > 0 && parseInt(list.style.left) < newLeft)) {
+                  list.style.left = parseInt(list.style.left) + speed + 'px';
+                  setTimeout(go, interval);
+                } else {
+                  list.style.left = newLeft + 'px';
+                  /*如果当前是第五张图，就跳到第一张图*/
+                  if (newLeft > -200) {
+                    list.style.left = -1226 * len + 'px';
+                  }
+                  if (newLeft < (-1226 * len)) {
+                    list.style.left = '-1226px';
+                  }
+                  animated = false;
+                }
+              }
+
+              go();
+            }
+
+            next.onclick = function () {
+              if (index == 4) {
+                index = 1;
+              } else {
+                index += 1;
+              }
+              showButton()
+              if (!animated) {
+                animate(-1226);
+              }
+            }
+            pre.onclick = function () {
+              if (index == 1) {
+                index = 4;
+              } else {
+                index -= 1;
+              }
+              showButton();
+              if (!animated) {
+                animate(1226);
+              }
+            }
+            /*按钮切换*/
+            for (var i = 0; i < buttons.length; i++) {
+
+              buttons[i].onclick = function () {
+                if (animated) {
+                  return false;
+                }
+                if (this.className == "on") {
+                  return false;
+                }
+                var myIndex = parseInt(this.getAttribute("index"));
+                var offset = 1226 * (myIndex - index);
+                animate(offset);
+                index = myIndex;
+                showButton();
+              }
+            }
+
+            /*自动切换*/
+            function autoPlay() {
+              timer = setInterval(function () {
+                next.onclick();
+              }, interval);
+            }
+
+            function stop() {
+              clearInterval(timer);
+            }
+
+            g("container").onmouseover = stop;
+            g("container").onmouseout = autoPlay;
+            autoPlay();
+          }
+        </script>
+        <div style="position:absolute;z-index:999;width: 1226px;height: 460px;top: 1px;left: 0px;">
+            <div style="float: left; background:rgba(70,70,70,0.6);height: 460px;width: 234px; color: rgb(251,251,251);">
+                <div id="tan1" class="aae" style="margin-top: 20px" onmouseover="t1over()" onmouseout="t1out()">&emsp;&emsp;手机&ensp;电话卡
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan2" class="aae" onmouseover="t2over()" onmouseout="t2out()">&emsp;&emsp;电视&ensp;盒子
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan3" class="aae" onmouseover="t3over()" onmouseout="t3out()">&emsp;&emsp;笔记本&ensp;平板
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan4" class="aae" onmouseover="t4over()" onmouseout="t4out()">&emsp;&emsp;家电&ensp;插线板
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan5" class="aae" onmouseover="t5over()" onmouseout="t5out()">&emsp;&emsp;出行&ensp;穿戴
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan6" class="aae" onmouseover="t6over()" onmouseout="t6out()">&emsp;&emsp;智能&ensp;路由器
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan7" class="aae" onmouseover="t7over()" onmouseout="t7out()">&emsp;&emsp;电源&ensp;配件
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan8" class="aae" onmouseover="t8over()" onmouseout="t8out()">&emsp;&emsp;个户&ensp;儿童
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan9" class="aae" onmouseover="t9over()" onmouseout="t9out()">&emsp;&emsp;耳机&ensp;音响
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+                <div id="tan10" class="aae" onmouseover="t10over()" onmouseout="t10out()">&emsp;&emsp;生活&ensp;箱包
+                    <i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
+                </div>
+            </div>
+            <div id="tan11" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">小米8</th>
+                        <th class="aal">小米8SE</th>
+                        <th class="aal">小米8MIX2</th>
+                        <th class="aal">小米8MIX</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">小米8</th>
+                        <th class="aal">小米8SE</th>
+                        <th class="aal">小米8MIX2</th>
+                        <th class="aal">小米8MIX</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">小米8</th>
+                        <th class="aal">小米8SE</th>
+                        <th class="aal">小米8MIX2</th>
+                        <th class="aal">小米8MIX</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">小米8</th>
+                        <th class="aal">小米8SE</th>
+                        <th class="aal">小米8MIX2</th>
+                        <th class="aal">小米8MIX</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan12" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                        <th class="aal">电视</th>
+                        <th class="aal">盒子</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan13" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                        <th class="aal">笔记本</th>
+                        <th class="aal">平板</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan14" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                        <th class="aal">家电</th>
+                        <th class="aal">插线板</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan15" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">出行</th>
+                        <th class="aal">穿戴</th>
+                        <th class="aal">出现</th>
+                        <th class="aal">穿戴</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">出行</th>
+                        <th class="aal">穿戴</th>
+                        <th class="aal">出现</th>
+                        <th class="aal">穿戴</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">出行</th>
+                        <th class="aal">穿戴</th>
+                        <th class="aal">出现</th>
+                        <th class="aal">穿戴</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">出行</th>
+                        <th class="aal">穿戴</th>
+                        <th class="aal">出现</th>
+                        <th class="aal">穿戴</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan16" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                        <th class="aal">智能</th>
+                        <th class="aal">路由器</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan17" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                        <th class="aal">电源&nbsp;配件</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan18" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                        <th class="aal">个户</th>
+                        <th class="aal">儿童</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan19" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                        <th class="aal">耳机</th>
+                        <th class="aal">音响</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tan20" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
+                <table>
+                    <tr>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                    </tr>
+                    <tr>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                        <th class="aal">生活</th>
+                        <th class="aal">箱包</th>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-                <style type="text/css">
-                	#container {
-				  
-				        width: 1226px;
-				        height: 460px;
-				        border: none;
-				        position: relative;
-				        overflow: hidden;
-				    }
-				    #list {
-				        /*6张图片*/
-				        width: 7356px;
-				        height: 460px;
-				        position: absolute;
-				        z-index: 1;
-				    }
-				    #list img {
-				        float: left;
-				         width: 1226px;
-				        height: 460px;
-				    }
-				    #buttons {
-				        position: absolute;
-				        height: 10px;
-				        width: 100px;
-				        z-index: 10;
-				        bottom: 20px;
-				        right: 100px;
-				    }
-				    #buttons span {
-				        cursor: pointer;
-				        float: left;
-				        border: 1px solid #fff;
-				        border-radius: 50%;
-				        height: 10px;
-				        width: 10px;
-				        margin-right: 5px;
-				        background: #333;
-				    }
-				    #buttons .on {
-				        background: orangered;
-				    }
-				    .arrow {
-				        display: block;
-				        cursor: pointer;
-				        line-height: 50px;
-				        text-align: center;
-				        font-size: 30px;
-				       
-				        width: 40px;
-				        height: 50px;
-				         position: absolute;
-				        z-index: 10;
-				        top: 210px;
-				        color: #fff;
-				        background-color: rgba(0, 0, 0, 0.3);
-				          
-				    }
-				    .arrow:hover {
-				         background-color: rgba(0, 0, 0, 0.7);
-				    }
-				    #pre {
-				        left: 234px;
-				    }
-				    #next {
-				        right: 0px;
-				    }
-                </style>
-			  	<script type="text/javascript">
-				  function g(id) {
 
-				        return document.getElementById(id);
-				   }
-				        window.onload = function() {
-				        var next = g("next");
-				        var list = g("list");
-				        var pre = g("pre");
-				        var buttons = g("buttons").getElementsByTagName("span");
-				        var len = 4;
-				        var index = 1;
-				        var interval=3000;
-				        var animated = false;
-				        var timer; //全局变量
-				        /*按钮显示*/
-				        function showButton() {
-				            for (var i = 0; i < buttons.length; i++) {
-				                if (buttons[i].className == "on") {
-				                    buttons[i].className = "";
-				                    break;
-				                }
-				            }
-				            buttons[index - 1].className = "on";
-				         }
-				        /*图片切换动画*/
-				        function animate(offset) {
-				            if (offset == 0) {
-				                return;
-				            }
-				            animated = true;
-				            var newLeft = parseInt(list.style.left) + offset;
-				            var time = 300; //位移总时间
-				            var interval = 10; //位移间隔时间
-				            var speed = offset / (time / interval); //每次位移量
-				            function go() {
-				                if ((speed < 0 && parseInt(list.style.left) > newLeft) || (speed > 0 && parseInt(list.style.left) < newLeft)) {
-				                    list.style.left = parseInt(list.style.left) + speed + 'px';
-				                    setTimeout(go, interval);
-				                } else {
-				                    list.style.left = newLeft + 'px';
-				                    /*如果当前是第五张图，就跳到第一张图*/
-				                    if (newLeft > -200) {
-				                        list.style.left = -1226 * len + 'px';
-				                    }
-				                    if (newLeft < (-1226 * len)) {
-				                        list.style.left = '-1226px';
-				                    }
-				                    animated = false;
-				                }
-				            }
-				            go();
-				       }
-				         next.onclick = function() {
-				            if (index == 4) {
-				                index = 1;
-				            } else {
-				                index += 1;
-				            }
-				            showButton()
-				            if (!animated) {
-				                animate(-1226);
-				            }
-				        }
-				        pre.onclick = function() {
-				            if (index == 1) {
-				                index = 4;
-				            } else {
-				                index -= 1;
-				            }
-				            showButton();
-				            if (!animated) {
-				                animate(1226);
-				            }
-				        }
-				        /*按钮切换*/
-				        for (var i = 0; i < buttons.length; i++) {
+    <div style="height: 170px; margin-top: 14px;">
+        <div class="aaf" style="height: 170px;">
+            <table
+            ">
+            <tr>
+                <th class="aag"><i class="iconfont">&#xe618;</i><br/>选购手机</th>
+                <th class="aag"><i class="iconfont">&#xe611;</i><br/>企业团购</th>
+                <th class="aag"><i class="iconfont">&#xf003d;</i><br/>F码通道</th>
+            </tr>
+            <tr>
+                <th class="aag"><i class="iconfont">&#xe733;</i><br/>不限量卡</th>
+                <th class="aag"><i class="iconfont">&#xe607;</i><br/>以旧换新</th>
+                <th class="aag"><i class="iconfont">&#xe62c;</i><br/>话费充值</th>
+            </tr>
+            </table>
 
-				            buttons[i].onclick = function() {
-				                if (animated) {
-				                    return false;
-				                }
-				                if (this.className == "on") {
-				                    return false;
-				                }
-				                var myIndex = parseInt(this.getAttribute("index"));
-				                var offset = 1226 * (myIndex - index);
-				                animate(offset);
-				                index = myIndex;
-				                showButton();
-				            }
-				        }
-				        /*自动切换*/
-				        function autoPlay() {
-				             timer = setInterval(function() {
-				                next.onclick();
-				            }, interval);
-				        }
-				        function stop() {
-				            clearInterval(timer);
-				       }
-				        g("container").onmouseover = stop;
-				        g("container").onmouseout = autoPlay;
-				        autoPlay();
-				    }
-				</script>
-		<div style="position:absolute;z-index:999;width: 1226px;height: 460px;top: 1px;left: 0px;">
-		  	<div style="float: left; background:rgba(70,70,70,0.6);height: 460px;width: 234px; color: rgb(251,251,251);">
-		  	    <div id="tan1" class="aae" style="margin-top: 20px" onmouseover="t1over()" onmouseout="t1out()">&emsp;&emsp;手机&ensp;电话卡
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan2" class="aae" onmouseover="t2over()" onmouseout="t2out()">&emsp;&emsp;电视&ensp;盒子
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan3" class="aae" onmouseover="t3over()" onmouseout="t3out()">&emsp;&emsp;笔记本&ensp;平板
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan4" class="aae" onmouseover="t4over()" onmouseout="t4out()">&emsp;&emsp;家电&ensp;插线板
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan5" class="aae" onmouseover="t5over()" onmouseout="t5out()">&emsp;&emsp;出行&ensp;穿戴
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan6" class="aae" onmouseover="t6over()" onmouseout="t6out()">&emsp;&emsp;智能&ensp;路由器
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan7" class="aae" onmouseover="t7over()" onmouseout="t7out()">&emsp;&emsp;电源&ensp;配件
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan8" class="aae" onmouseover="t8over()" onmouseout="t8out()">&emsp;&emsp;个户&ensp;儿童
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan9" class="aae" onmouseover="t9over()" onmouseout="t9out()">&emsp;&emsp;耳机&ensp;音响
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	    <div id="tan10" class="aae" onmouseover="t10over()" onmouseout="t10out()">&emsp;&emsp;生活&ensp;箱包
-		  	    	<i class="iconfont" style="font-size: 12px;margin-right: 20px;float: right;">&#xe636;</i>
-		  	    </div>
-		  	</div>
-		  	<div id="tan11" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">小米8</th><th class="aal">小米8SE</th><th class="aal">小米8MIX2</th><th class="aal">小米8MIX</th></tr>
-		  			<tr><th class="aal">小米8</th><th class="aal">小米8SE</th><th class="aal">小米8MIX2</th><th class="aal">小米8MIX</th></tr>
-		  			<tr><th class="aal">小米8</th><th class="aal">小米8SE</th><th class="aal">小米8MIX2</th><th class="aal">小米8MIX</th></tr>
-		  			<tr><th class="aal">小米8</th><th class="aal">小米8SE</th><th class="aal">小米8MIX2</th><th class="aal">小米8MIX</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan12" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">电视</th><th class="aal">盒子</th><th class="aal">电视</th><th class="aal">盒子</th></tr>
-		  			<tr><th class="aal">电视</th><th class="aal">盒子</th><th class="aal">电视</th><th class="aal">盒子</th></tr>
-		  			<tr><th class="aal">电视</th><th class="aal">盒子</th><th class="aal">电视</th><th class="aal">盒子</th></tr>
-		  			<tr><th class="aal">电视</th><th class="aal">盒子</th><th class="aal">电视</th><th class="aal">盒子</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan13" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">笔记本</th><th class="aal">平板</th><th class="aal">笔记本</th><th class="aal">平板</th></tr>
-		  			<tr><th class="aal">笔记本</th><th class="aal">平板</th><th class="aal">笔记本</th><th class="aal">平板</th></tr>
-		  			<tr><th class="aal">笔记本</th><th class="aal">平板</th><th class="aal">笔记本</th><th class="aal">平板</th></tr>
-		  			<tr><th class="aal">笔记本</th><th class="aal">平板</th><th class="aal">笔记本</th><th class="aal">平板</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan14" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">家电</th><th class="aal">插线板</th><th class="aal">家电</th><th class="aal">插线板</th></tr>
-		  			<tr><th class="aal">家电</th><th class="aal">插线板</th><th class="aal">家电</th><th class="aal">插线板</th></tr>
-		  			<tr><th class="aal">家电</th><th class="aal">插线板</th><th class="aal">家电</th><th class="aal">插线板</th></tr>
-		  			<tr><th class="aal">家电</th><th class="aal">插线板</th><th class="aal">家电</th><th class="aal">插线板</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan15" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">出行</th><th class="aal">穿戴</th><th class="aal">出现</th><th class="aal">穿戴</th></tr>
-		  			<tr><th class="aal">出行</th><th class="aal">穿戴</th><th class="aal">出现</th><th class="aal">穿戴</th></tr>
-		  			<tr><th class="aal">出行</th><th class="aal">穿戴</th><th class="aal">出现</th><th class="aal">穿戴</th></tr>
-		  			<tr><th class="aal">出行</th><th class="aal">穿戴</th><th class="aal">出现</th><th class="aal">穿戴</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan16" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">智能</th><th class="aal">路由器</th><th class="aal">智能</th><th class="aal">路由器</th></tr>
-		  			<tr><th class="aal">智能</th><th class="aal">路由器</th><th class="aal">智能</th><th class="aal">路由器</th></tr>
-		  			<tr><th class="aal">智能</th><th class="aal">路由器</th><th class="aal">智能</th><th class="aal">路由器</th></tr>
-		  			<tr><th class="aal">智能</th><th class="aal">路由器</th><th class="aal">智能</th><th class="aal">路由器</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan17" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th></tr>
-		  			<tr><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th></tr>
-		  			<tr><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th></tr>
-		  			<tr><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th><th class="aal">电源&nbsp;配件</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan18" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">个户</th><th class="aal">儿童</th><th class="aal">个户</th><th class="aal">儿童</th></tr>
-		  			<tr><th class="aal">个户</th><th class="aal">儿童</th><th class="aal">个户</th><th class="aal">儿童</th></tr>
-		  			<tr><th class="aal">个户</th><th class="aal">儿童</th><th class="aal">个户</th><th class="aal">儿童</th></tr>
-		  			<tr><th class="aal">个户</th><th class="aal">儿童</th><th class="aal">个户</th><th class="aal">儿童</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan19" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">耳机</th><th class="aal">音响</th><th class="aal">耳机</th><th class="aal">音响</th></tr>
-		  			<tr><th class="aal">耳机</th><th class="aal">音响</th><th class="aal">耳机</th><th class="aal">音响</th></tr>
-		  			<tr><th class="aal">耳机</th><th class="aal">音响</th><th class="aal">耳机</th><th class="aal">音响</th></tr>
-		  			<tr><th class="aal">耳机</th><th class="aal">音响</th><th class="aal">耳机</th><th class="aal">音响</th></tr>
-		  		</table>
-		  	</div>
-		  	<div id="tan20" style="float: left;height: 460px; width: 992px;background-color: #fff;display: none;">
-		  		<table>
-		  			<tr><th class="aal">生活</th><th class="aal">箱包</th><th class="aal">生活</th><th class="aal">箱包</th></tr>
-		  			<tr><th class="aal">生活</th><th class="aal">箱包</th><th class="aal">生活</th><th class="aal">箱包</th></tr>
-		  			<tr><th class="aal">生活</th><th class="aal">箱包</th><th class="aal">生活</th><th class="aal">箱包</th></tr>
-		  			<tr><th class="aal">生活</th><th class="aal">箱包</th><th class="aal">生活</th><th class="aal">箱包</th></tr>
-		  		</table>
-		  	</div>
-	  </div>
-	  </div>
-	  
-	  <div style="height: 170px; margin-top: 14px;">
-	  	<div class="aaf" style="height: 170px;">
-	  		<table ">
-	  			<tr>
-	  				<th class="aag"><i class="iconfont">&#xe618;</i><br/>选购手机</th>
-	  				<th class="aag"><i class="iconfont">&#xe611;</i><br/>企业团购</th>
-	  				<th class="aag"><i class="iconfont">&#xf003d;</i><br/>F码通道</th>
-	  			</tr>
-	  			<tr>
-	  				<th class="aag"><i class="iconfont">&#xe733;</i><br/>不限量卡</th>
-	  				<th class="aag"><i class="iconfont">&#xe607;</i><br/>以旧换新</th>
-	  				<th class="aag"><i class="iconfont">&#xe62c;</i><br/>话费充值</th>
-	  			</tr>
-	  		</table>
-	  		
-	  	</div>
-	  	<div style="float: left;margin-left: 14px;">
-            <img src="images/5.jpg" style="height: 170px;width: 316px;" />
-	  	</div>
-	  	<div style="float: left;margin-left: 15px;">
-            <img src="images/6.jpg" style="height: 170px;width: 316px;" />
-	  	</div>
-	  	<div style="float: left;margin-left: 15px;">
-            <img src="images/7.jpg" style="height: 170px;width: 316px;" />
-	  	</div>
-	  </div>
+        </div>
+        <div style="float: left;margin-left: 14px;">
+            <img src="images/5.jpg" style="height: 170px;width: 316px;"/>
+        </div>
+        <div style="float: left;margin-left: 15px;">
+            <img src="images/6.jpg" style="height: 170px;width: 316px;"/>
+        </div>
+        <div style="float: left;margin-left: 15px;">
+            <img src="images/7.jpg" style="height: 170px;width: 316px;"/>
+        </div>
+    </div>-->
 
-	  <div id="xiaomishangou" style="height: 610px;">
-	  	<div style="font-size: 25px;margin-top: 26px;height: 58px;line-height: 58px;position: relative;">
-	  		<div style="float: left;">小米闪购</div>
-	  		<div  style="float: right;height: 58px;">
-	  			<i id="qq" class="iconfont" style="font-size: 30px;">&#xe787;</i>
-	  			<i id="qq" class="iconfont" style="font-size: 30px;">&#xe786;</i>
-	  		</div>
-	  	</div>
-	  	<div style="height: 340px;text-align:center">
-	  		<div style="float: left;width: 234px;height: 340px; border-top-color: #e53935;border-top-style: solid;border-top-width: 1px;background-color:#f1eded;">
-	  			<div style="font-size: 21px;color:#ef3a3b;padding-top: 54px;">18:00场</div>
-	  			<div style="margin: 25px auto"><img src="images/shandian.png"></div>
-	  			<div style="font-size: 15px;color: rgba(0,0,0,0.54);">距离开始还有</div>
-	  			<div style="width: 168px;margin: 28px auto 0;font-size: 21px;" onload="FreshTime()">
-	  				<span id="LeftTime"></span>
-	  			</div>
-	  			<script type="text/javascript">
-	  				    function FreshTime() {
-			            var endtime = new Date("2018/12/19,21:29:12");//结束时间
-			            var nowtime = new Date();//当前时间
-			            var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000); // 剩余时间
-			            d = parseInt(lefttime / 3600 / 24);   // 剩余天数
-			            h = parseInt((lefttime / 3600) % 24); // 剩余小时数
-			            m = parseInt((lefttime / 60) % 60); // 剩余分钟数
-			            s = parseInt(lefttime % 60);    // 剩余秒数
+    <div id="xiaomishangou" style="height: 610px;">
+        <!--<div style="font-size: 25px;margin-top: 26px;height: 58px;line-height: 58px;position: relative;">
+            <div style="float: left;">小米闪购</div>
+            <div style="float: right;height: 58px;">
+                <i id="qq" class="iconfont" style="font-size: 30px;">&#xe787;</i>
+                <i id="qq" class="iconfont" style="font-size: 30px;">&#xe786;</i>
+            </div>
+        </div>-->
+        <div style="height: 340px;text-align:center">
+            <!--<div style="float: left;width: 234px;height: 340px; border-top-color: #e53935;border-top-style: solid;border-top-width: 1px;background-color:#f1eded;">
+                <div style="font-size: 21px;color:#ef3a3b;padding-top: 54px;">18:00场</div>
+                <div style="margin: 25px auto"><img src="images/shandian.png"></div>
+                <div style="font-size: 15px;color: rgba(0,0,0,0.54);">距离开始还有</div>
+                <div style="width: 168px;margin: 28px auto 0;font-size: 21px;" onload="FreshTime()">
+                    <span id="LeftTime"></span>
+                </div>
+                <script type="text/javascript">
+                  function FreshTime() {
+                    var endtime = new Date("2018/12/19,21:29:12");//结束时间
+                    var nowtime = new Date();//当前时间
+                    var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000); // 剩余时间
+                    d = parseInt(lefttime / 3600 / 24);   // 剩余天数
+                    h = parseInt((lefttime / 3600) % 24); // 剩余小时数
+                    m = parseInt((lefttime / 60) % 60); // 剩余分钟数
+                    s = parseInt(lefttime % 60);    // 剩余秒数
 
-			            document.getElementById("LeftTime").innerHTML =d + "天" + h + "时"
-			                    + m + "分" + s + "秒";
+                    document.getElementById("LeftTime").innerHTML = d + "天" + h + "时"
+                      + m + "分" + s + "秒";
 
-			            if (lefttime <= 0) {
-			                document.getElementById("LeftTime").innerHTML = "团购已结束";
-			                clearInterval(sh);
-			            }
-			        }
-			        FreshTime()
-			        var sh;
-			        sh = setInterval(FreshTime, 1000); 
-	  			</script>
+                    if (lefttime <= 0) {
+                      document.getElementById("LeftTime").innerHTML = "团购已结束";
+                      clearInterval(sh);
+                    }
+                  }
 
-	  		</div>
-	  		<div style="float: left;margin-left: 14px;padding-bottom: 40px;overflow: hidden;">
-	  			<div style="white-space: nowrap;position: relative;">
-		  			<div class="aah" style="border-top-color: #ffac13;float: left;margin-right: 14px;">
-		  				<div class="aai">1元秒杀</div>
-		  				<div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png" ></div>
-		  				<div style="font-size: 14px;color: #212121;">
-		  							小米水质TDS检测笔&ensp;白色
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							准确检测家中水质纯度
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">1&nbsp;元&emsp;</a>
-		  			    	<a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
-		  			    </div>
-		  			</div>
-		  			<div class="aah" style="border-top-color: #83c44e;float: left;margin-right: 14px;">
-		  				<div class="aai">1元秒杀</div>
-		  				<div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png" ></div>
-		  				<div style="font-size: 14px;color: #212121;">
-		  							小米水质TDS检测笔&ensp;白色
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							准确检测家中水质纯度
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">1&nbsp;元&emsp;</a>
-		  			    	<a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
-		  			    </div>
-		  			</div>
-		  			<div class="aah" style="border-top-color: #2196f3;float: left;margin-right: 14px;">
-		  				<div class="aai">1元秒杀</div>
-		  				<div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png" ></div>
-		  				<div style="font-size: 14px;color: #212121;">
-		  							小米水质TDS检测笔&ensp;白色
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							准确检测家中水质纯度
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">1&nbsp;元&emsp;</a>
-		  			    	<a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
-		  			    </div>
-		  			</div>
-		  			<div class="aah" style="border-top-color: #e53935;float: left;">
-		  				<div class="aai">1元秒杀</div>
-		  				<div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png" ></div>
-		  				<div style="font-size: 14px;color: #212121;">
-		  							小米水质TDS检测笔&ensp;白色
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							准确检测家中水质纯度
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">1&nbsp;元&emsp;</a>
-		  			    	<a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
-		  			    </div>
-		  			</div>
+                  FreshTime()
+                  var sh;
+                  sh = setInterval(FreshTime, 1000);
+                </script>
 
-		  		</div>
-	  		</div>
-	  	</div>
-	  	<div style="height: 120px; position: relative;margin-top: 2px;padding-bottom: 42px;">
-	  		<img width="1226px" height="120px" src="images/8.jpg">
-	  	</div>
-	  </div>
+            </div>-->
+            <div style="float: left;margin-left: 14px;padding-bottom: 40px;overflow: hidden;">
+                <div style="white-space: nowrap;position: relative;">
+                    <div class="aah" style="border-top-color: #ffac13;float: left;margin-right: 14px;">
+                        <div class="aai">说明书1</div>
+                        <div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png"></div>
+                        <!--<div style="font-size: 14px;color: #212121;">
+                            小米水质TDS检测笔&ensp;白色
+                        </div>-->
+                        <a style="font-size: 14px;color: #212121;"
+                           href="https://wkbjcloudbos.bdimg.com/v1/wenku15//bwmark/5e1b99704b19ea01c8995de49c89b07d?responseCacheControl=max-age%3D3888000&responseExpires=Sat%2C%2017%20Dec%202022%2017%3A22%3A02%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2022-11-02T09%3A22%3A02Z%2F3000%2Fhost%2F0d66a7e6dd8d121d6ab0b662bb913af640c7f1e9204bcbbe9bcdaca520c37994&responseContentDisposition=attachment%3B%20filename%3D%22%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc%22%3B%20filename%2A%3Dutf-8%27%27%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc&responseContentType=application%2Foctet-stream&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTY2NzM4MzkyMiwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDb250ZW50RGlzcG9zaXRpb24iLCJyZXNwb25zZUNvbnRlbnRUeXBlIiwicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiXX0%3D.OoQtsj3RXe2asl%2Bv5bGmI8wAWFFOTUWq4B3kZFtwcSQ%3D.1667383922">这是我的说明书</a>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            点击名称下载附件
+                        </div>
+                        <!--<div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">1&nbsp;元&emsp;</a>
+                            <a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
+                        </div>-->
+                    </div>
+                    <div class="aah" style="border-top-color: #83c44e;float: left;margin-right: 14px;">
+                        <div class="aai">说明书2</div>
+                        <div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png"></div>
+                        <a style="font-size: 14px;color: #212121;"
+                           href="https://wkbjcloudbos.bdimg.com/v1/wenku15//bwmark/5e1b99704b19ea01c8995de49c89b07d?responseCacheControl=max-age%3D3888000&responseExpires=Sat%2C%2017%20Dec%202022%2017%3A22%3A02%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2022-11-02T09%3A22%3A02Z%2F3000%2Fhost%2F0d66a7e6dd8d121d6ab0b662bb913af640c7f1e9204bcbbe9bcdaca520c37994&responseContentDisposition=attachment%3B%20filename%3D%22%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc%22%3B%20filename%2A%3Dutf-8%27%27%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc&responseContentType=application%2Foctet-stream&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTY2NzM4MzkyMiwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDb250ZW50RGlzcG9zaXRpb24iLCJyZXNwb25zZUNvbnRlbnRUeXBlIiwicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiXX0%3D.OoQtsj3RXe2asl%2Bv5bGmI8wAWFFOTUWq4B3kZFtwcSQ%3D.1667383922">这是我的说明书</a>
+
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            点击名称下载附件
+                        </div>
+                        <!--<div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">1&nbsp;元&emsp;</a>
+                            <a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
+                        </div>-->
+                    </div>
+                    <div class="aah" style="border-top-color: #2196f3;float: left;margin-right: 14px;">
+                        <div class="aai">说明书3</div>
+                        <div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png"></div>
+                        <a style="font-size: 14px;color: #212121;"
+                           href="https://wkbjcloudbos.bdimg.com/v1/wenku15//bwmark/5e1b99704b19ea01c8995de49c89b07d?responseCacheControl=max-age%3D3888000&responseExpires=Sat%2C%2017%20Dec%202022%2017%3A22%3A02%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2022-11-02T09%3A22%3A02Z%2F3000%2Fhost%2F0d66a7e6dd8d121d6ab0b662bb913af640c7f1e9204bcbbe9bcdaca520c37994&responseContentDisposition=attachment%3B%20filename%3D%22%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc%22%3B%20filename%2A%3Dutf-8%27%27%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc&responseContentType=application%2Foctet-stream&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTY2NzM4MzkyMiwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDb250ZW50RGlzcG9zaXRpb24iLCJyZXNwb25zZUNvbnRlbnRUeXBlIiwicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiXX0%3D.OoQtsj3RXe2asl%2Bv5bGmI8wAWFFOTUWq4B3kZFtwcSQ%3D.1667383922">这是我的说明书</a>
+
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            点击名称下载附件
+                        </div>
+                        <!--<div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">1&nbsp;元&emsp;</a>
+                            <a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
+                        </div>-->
+                    </div>
+                    <div class="aah" style="border-top-color: #e53935;float: left;">
+                        <div class="aai">说明书4</div>
+                        <div style="margin: 0 auto 22px;margin-top: 39px;"><img src="images/bi.png"></div>
+                        <a style="font-size: 14px;color: #212121;"
+                           href="https://wkbjcloudbos.bdimg.com/v1/wenku15//bwmark/5e1b99704b19ea01c8995de49c89b07d?responseCacheControl=max-age%3D3888000&responseExpires=Sat%2C%2017%20Dec%202022%2017%3A22%3A02%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2022-11-02T09%3A22%3A02Z%2F3000%2Fhost%2F0d66a7e6dd8d121d6ab0b662bb913af640c7f1e9204bcbbe9bcdaca520c37994&responseContentDisposition=attachment%3B%20filename%3D%22%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc%22%3B%20filename%2A%3Dutf-8%27%27%25E4%25BA%25A7%25E5%2593%2581%25E5%25A4%2596%25E8%25A7%2582%25E6%25A3%2580%25E6%259F%25A5%25E8%25A1%25A8.doc&responseContentType=application%2Foctet-stream&token=eyJ0eXAiOiJKSVQiLCJ2ZXIiOiIxLjAiLCJhbGciOiJIUzI1NiIsImV4cCI6MTY2NzM4MzkyMiwidXJpIjp0cnVlLCJwYXJhbXMiOlsicmVzcG9uc2VDb250ZW50RGlzcG9zaXRpb24iLCJyZXNwb25zZUNvbnRlbnRUeXBlIiwicmVzcG9uc2VDYWNoZUNvbnRyb2wiLCJyZXNwb25zZUV4cGlyZXMiXX0%3D.OoQtsj3RXe2asl%2Bv5bGmI8wAWFFOTUWq4B3kZFtwcSQ%3D.1667383922">这是我的说明书</a>
+
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            点击名称下载附件
+                        </div>
+                        <!--<div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">1&nbsp;元&emsp;</a>
+                            <a style="color: #b0b0b0;text-decoration: line-through;">39&nbsp;元</a>
+                        </div>-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--<div style="height: 120px; position: relative;margin-top: 2px;padding-bottom: 42px;">
+            <img width="1226px" height="120px" src="images/8.jpg">
+        </div>-->
+    </div>
 </div>
-<div id="main" style="background-color: #f5f5f5;height: 1500px;color: #333;padding-top: 22px;">
-	<div style="width: 1226px;position: relative;margin: 0 auto;">
-		<div style="height: 58px;line-height: 58px;position: relative;">
-			<div style="float: left;font-size: 22px;">手机</div>
-	  		<div  style="float: right;font-size: 20px;">
-	  	        查看全部
-	  			<i id="qq" class="iconfont" style="font-size: 20px;">&#xe508;</i>
-	  		</div>
-		</div>
-		<div style="text-align: center;">
-			<div style="float: left;">
-				<img src="images/9.jpg" width="234px;">
-			</div>
-			<div style="float: left;margin-left: 14px;width: 978px;">
-				<div>
-					<div class="aaj" >
-						<div>
-						    <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a1.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  							红米6A
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							Ai人脸解锁，小巧全面屏
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">599&nbsp;元</a>
-		  			    </div>
-					</div>
-					<div class="aaj" style="margin-left: 14px;">
-						<div>
-						    <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a2.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  						       小米8&ensp;6GB+64GB
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							全球首款双频GPS，骁龙845处理器
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">2699&nbsp;元</a>
-		  			    </div>
-					</div>
-					<div class="aaj" style="margin-left: 14px;">
-						<div>
-						    <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a3.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  							红米6A
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							Ai人脸解锁，小巧全面屏
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">599&nbsp;元</a>
-		  			    </div>
-					</div>
-					<div class="aaj" style="margin-left: 14px;">
-						<div>
-						    <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a4.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  							红米6A
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							Ai人脸解锁，小巧全面屏
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">599&nbsp;元</a>
-		  			    </div>
-					</div>
-					
-					
-				</div>
-				<div>
-					<div class="aaj" style="margin-top: 14px;">
-						<div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">减200元</div>
-						<div>
-						    <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a5.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  							红米6A
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							Ai人脸解锁，小巧全面屏
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">599&nbsp;元</a>
-		  			    </div>
-					</div>
-					<div class="aaj" style="margin-top: 14px;margin-left: 14px;">
-						<div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">享6折</div>
-						<div>
-						    <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a6.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  							红米6A
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							Ai人脸解锁，小巧全面屏
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">599&nbsp;元</a>
-		  			    </div>
-					</div>
-					<div class="aaj" style="margin-top: 14px;margin-left: 14px;">
-						<div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">减100元</div>
-						<div>
-						    <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a7.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  							红米6A
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							Ai人脸解锁，小巧全面屏
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">599&nbsp;元</a>
-		  			    </div>
-					</div>
-					<div class="aaj" style="margin-top: 14px;margin-left: 14px;">
-						<div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">享8折</div>
-						<div>
-						    <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a8.jpg">
-					    </div>
-					    <div style="font-size: 14px;color: #212121;">
-	  							红米6A
-		  			    </div>
-		  			    <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
-		  							Ai人脸解锁，小巧全面屏
-		  			    </div>
-		  			    <div style="font-size: 14px;margin-top: 15px;">
-		  			    	<a style="color: #ff6709;">599&nbsp;元</a>
-		  			    </div>
-					</div>
-				</div>
-			</div>
+<!--<div id="main" style="background-color: #f5f5f5;height: 1500px;color: #333;padding-top: 22px;">
+    <div style="width: 1226px;position: relative;margin: 0 auto;">
+        <div style="height: 58px;line-height: 58px;position: relative;">
+            <div style="float: left;font-size: 22px;">手机</div>
+            <div style="float: right;font-size: 20px;">
+                查看全部
+                <i id="qq" class="iconfont" style="font-size: 20px;">&#xe508;</i>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div style="float: left;">
+                <img src="images/9.jpg" width="234px;">
+            </div>
+            <div style="float: left;margin-left: 14px;width: 978px;">
+                <div>
+                    <div class="aaj">
+                        <div>
+                            <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a1.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            红米6A
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            Ai人脸解锁，小巧全面屏
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">599&nbsp;元</a>
+                        </div>
+                    </div>
+                    <div class="aaj" style="margin-left: 14px;">
+                        <div>
+                            <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a2.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            小米8&ensp;6GB+64GB
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            全球首款双频GPS，骁龙845处理器
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">2699&nbsp;元</a>
+                        </div>
+                    </div>
+                    <div class="aaj" style="margin-left: 14px;">
+                        <div>
+                            <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a3.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            红米6A
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            Ai人脸解锁，小巧全面屏
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">599&nbsp;元</a>
+                        </div>
+                    </div>
+                    <div class="aaj" style="margin-left: 14px;">
+                        <div>
+                            <img style="margin-top: 20px;width: 160px;height: 160px;" src="images/a4.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            红米6A
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            Ai人脸解锁，小巧全面屏
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">599&nbsp;元</a>
+                        </div>
+                    </div>
 
-		</div>
-		<div >
-			<img src="images/10.jpg" width="1226px" style="margin-top: 39px;margin-bottom: 39px;">
-		</div>
 
-	</div>
-</div>
-<div id="jiewei" style="height: 438px;">
-	<div style="width: 1226px;position: relative;margin: 0 auto">
-		<div style="height: 272px;text-align: center;">
-			<div style="height: 80px;line-height: 80px;color: #616161;font-size: 16px;">
-				<ul>
-					<li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;"><i class="iconfont">&#xe614;</i> 预约维修服务</li>
-					<li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;"><i class="iconfont">&#xe67d;</i> 7天无理由退货</li>
-					<li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;"><i class="iconfont">&#xe607;</i> 15天免费换货</li>
-					<li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;"><i class="iconfont">&#xe611;</i> 满150元包邮</li>
-					<li style="list-style: none;float: left;height: 25px;width:20%;line-height: 25px;"><i class="iconfont">&#xe612;</i>520余家售后网点</li>
-				</ul>
-			</div>
-			<div style="height: 192px;">
-				
-			</div>
-		</div>
-		<div style="height: 166px;">
-			
-		</div>
-	</div>
-	
-</div>
+                </div>
+                <div>
+                    <div class="aaj" style="margin-top: 14px;">
+                        <div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">
+                            减200元
+                        </div>
+                        <div>
+                            <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a5.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            红米6A
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            Ai人脸解锁，小巧全面屏
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">599&nbsp;元</a>
+                        </div>
+                    </div>
+                    <div class="aaj" style="margin-top: 14px;margin-left: 14px;">
+                        <div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">
+                            享6折
+                        </div>
+                        <div>
+                            <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a6.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            红米6A
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            Ai人脸解锁，小巧全面屏
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">599&nbsp;元</a>
+                        </div>
+                    </div>
+                    <div class="aaj" style="margin-top: 14px;margin-left: 14px;">
+                        <div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">
+                            减100元
+                        </div>
+                        <div>
+                            <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a7.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            红米6A
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            Ai人脸解锁，小巧全面屏
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">599&nbsp;元</a>
+                        </div>
+                    </div>
+                    <div class="aaj" style="margin-top: 14px;margin-left: 14px;">
+                        <div style="top: 0px;width:64px;height:20px;margin-left: 85px; font-size:12px;line-height:20px;color:#fff;background-color:#e53935;">
+                            享8折
+                        </div>
+                        <div>
+                            <img style="margin-top: 0px;width: 160px;height: 160px;" src="images/a8.jpg">
+                        </div>
+                        <div style="font-size: 14px;color: #212121;">
+                            红米6A
+                        </div>
+                        <div style="font-size: 12px;height: 18px;line-height: 18px; color: #b0b0b0;margin-top: 5px;">
+                            Ai人脸解锁，小巧全面屏
+                        </div>
+                        <div style="font-size: 14px;margin-top: 15px;">
+                            <a style="color: #ff6709;">599&nbsp;元</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <img src="images/10.jpg" width="1226px" style="margin-top: 39px;margin-bottom: 39px;">
+        </div>
+
+    </div>
+</div>-->
+<!--<div id="jiewei" style="height: 438px;">
+    <div style="width: 1226px;position: relative;margin: 0 auto">
+        <div style="height: 272px;text-align: center;">
+            <div style="height: 80px;line-height: 80px;color: #616161;font-size: 16px;">
+                <ul>
+                    <li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;">
+                        <i class="iconfont">&#xe614;</i> 预约维修服务
+                    </li>
+                    <li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;">
+                        <i class="iconfont">&#xe67d;</i> 7天无理由退货
+                    </li>
+                    <li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;">
+                        <i class="iconfont">&#xe607;</i> 15天免费换货
+                    </li>
+                    <li style="list-style: none;float: left;height: 25px;width:19.9%;line-height: 25px;border-right:#E0E0E0 1px solid;">
+                        <i class="iconfont">&#xe611;</i> 满150元包邮
+                    </li>
+                    <li style="list-style: none;float: left;height: 25px;width:20%;line-height: 25px;"><i
+                            class="iconfont">&#xe612;</i>520余家售后网点
+                    </li>
+                </ul>
+            </div>
+            <div style="height: 192px;">
+
+            </div>
+        </div>
+        <div style="height: 166px;">
+
+        </div>
+    </div>
+
+</div>-->
 </body>
 </html>
